@@ -1,5 +1,6 @@
 #!/usr/bin/env perl
 #Lori Gladney  08/17/2017
+#RUN THIS IN A CLEAN, EMPTY DIRECTORY
 #Splits a multi-genome fasta file from Bionumerics into individual genomes
 #Splits the contigs on pipes, then removes contigs less than 500 bp  
 #Make sure lskatz/lskScripts @ https://github.com/lskatz/lskScripts are in your PATH and executable
