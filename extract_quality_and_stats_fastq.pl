@@ -63,19 +63,19 @@ $stat1->add_data(@data1);
 #print join ("\t", $stat->quantile(0), $stat->quantile(1), $stat->quantile(2), $stat->quantile(3), $stat->quantile(4), $stat->skewness(), $stat->mean(), $stat->geometric_mean(), $stat->variance(), $stat->standard_deviation(), $stat->count())."\n";
 
 print join ("\t", $ARGV[0], "average_read_quality_stats")."\n"; 
-print join ("\t", "lower whisker=", $stat1->quantile(0))."\n";
-print join ("\t", "1st quartile=", $stat1->quantile(1) )."\n";
+print join ("\t", "lower_whisker=", $stat1->quantile(0))."\n";
+print join ("\t", "1st_quartile=", $stat1->quantile(1) )."\n";
 print join ("\t", "median=", $stat1->quantile(2))."\n";
-print join ("\t", "3rd quartile=", $stat1->quantile(3))."\n";
-print join ("\t", "upper whisker=", $stat1->quantile(4))."\n";
+print join ("\t", "3rd_quartile=", $stat1->quantile(3))."\n";
+print join ("\t", "upper_whisker=", $stat1->quantile(4))."\n";
 print join ("\t", "skewness=", $stat1->skewness())."\n";
 print join ("\t", "mean_normal=", $stat1->mean())."\n";
 print join ("\t", "mean_geometric=", $stat1->geometric_mean())."\n";
 print join ("\t", "variance=", $stat1->variance())."\n";
-print join ("\t", "standard deviation=",$stat1->standard_deviation())."\n";
+print join ("\t", "standard_deviation=",$stat1->standard_deviation())."\n";
 print join ("\t", "read_count=", $stat1->count())."\n";
  
-print "########################################################\n"; 
+#print "########################################################\n"; 
  
 my @data2=@len; #Read length 
 my $stat2 = Statistics::Descriptive::Full->new();  #descriptive stats function
@@ -86,16 +86,16 @@ $stat2->add_data(@data2);
 #print join ("\t", $stat->quantile(0), $stat->quantile(1), $stat->quantile(2), $stat->quantile(3), $stat->quantile(4), $stat->skewness(), $stat->mean(), $stat->geometric_mean(), $stat->variance(), $stat->standard_deviation(), $stat->count())."\n";
 
 print join ("\t", $ARGV[0], "read_length_stats")."\n";
-print join ("\t", "lower whisker=", $stat2->quantile(0))."\n";
-print join ("\t", "1st quartile=", $stat2->quantile(1) )."\n";
+print join ("\t", "lower_whisker=", $stat2->quantile(0))."\n";
+print join ("\t", "1st_quartile=", $stat2->quantile(1) )."\n";
 print join ("\t", "median=", $stat2->quantile(2))."\n";
-print join ("\t", "3rd quartile=", $stat2->quantile(3))."\n";
-print join ("\t", "upper whisker=", $stat2->quantile(4))."\n";
+print join ("\t", "3rd_quartile=", $stat2->quantile(3))."\n";
+print join ("\t", "upper_whisker=", $stat2->quantile(4))."\n";
 print join ("\t", "skewness=", $stat2->skewness())."\n";
 print join ("\t", "mean_normal=", $stat2->mean())."\n";
 print join ("\t", "mean_geometric=", $stat2->geometric_mean())."\n";
 print join ("\t", "variance=", $stat2->variance())."\n";
-print join ("\t", "standard deviation=",$stat2->standard_deviation())."\n";
+print join ("\t", "standard_deviation=",$stat2->standard_deviation())."\n";
 print join ("\t", "read_count=", $stat2->count())."\n"; 
  
  
